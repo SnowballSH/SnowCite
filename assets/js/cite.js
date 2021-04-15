@@ -5,7 +5,7 @@ window.onload = () => {
   let first = getQueryVariable("first");
   let last = getQueryVariable("last");
 
-  let t1 = `${cap(last)}, ${cap(first)}. <i>${title}</i>.`;
+  let t1 = `${cap(last)}, ${cap(first)}. <i>${title}</i>. `;
   let tb = pub ? `${pub}` : "";
   let t2 = url ? `, <a href="${url}">${url}</a>` : "";
 
