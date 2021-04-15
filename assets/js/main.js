@@ -1,7 +1,11 @@
 function cite() {
-  window.location.href += `cite.html?url=${get("URL")}&title=${get(
-    "Title"
-  )}&pub=${get("Publisher")}&first=${get("First")}&last=${get("Last")}`;
+  let x = window.location.href.split("/");
+  x.pop();
+  window.location.href =
+    x.join("") +
+    `cite.html?url=${get("URL")}&title=${get("Title")}&pub=${get(
+      "Publisher"
+    )}&first=${get("First")}&last=${get("Last")}`;
 }
 
 function get(name) {
