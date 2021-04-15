@@ -1,7 +1,7 @@
 function cite() {
   window.location.href =
     window.location.href +
-    `/cite.html?url=${get("URL")}&title=${get("Title")}&pub=${get(
+    `cite.html?url=${get("URL")}&title=${get("Title")}&pub=${get(
       "Publisher"
     )}&first=${get("First")}&last=${get("Last")}`;
 }
