@@ -2,8 +2,8 @@ function cite() {
   let x = window.location.href.split("/");
   x.pop();
   window.location.href =
-    x.join("") +
-    `cite.html?url=${get("URL")}&title=${get("Title")}&pub=${get(
+    x.join("/") +
+    `/cite.html?url=${get("URL")}&title=${get("Title")}&pub=${get(
       "Publisher"
     )}&first=${get("First")}&last=${get("Last")}`;
 }
